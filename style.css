@@ -25,6 +25,7 @@ body {
     margin: 20px;
     box-shadow: 0 5px 10px #059B3EEE;
     border: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .button:hover {
