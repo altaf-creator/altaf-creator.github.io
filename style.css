@@ -39,28 +39,28 @@ body {
 }
 
 .navigation-bar {
-    background-color: #f8f8f8;
+    background-color: rgba(248, 248, 248, 0.815);
     top: 0;
     position: sticky;
     padding: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.062);
     height: 45px;
     display: block;
     z-index: 9999;
-    
+    backdrop-filter: blur(25px);
 }
 
 .navigation-bar-special {
-    background-color: #f8f8f8;
+    background-color: var(--secondary-background);
     top: 0;
     position: sticky;
     padding: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
     height: 45px;
     display: block;
     z-index: 9999;
     width: 600px;
     border-radius: 5px;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.062);
 }
 
 .centered-container {
@@ -376,6 +376,50 @@ footer {
     border-radius: 5px; 
     height: 400px; 
     object-fit: cover;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(25px);
+}
+
+.white-text {
+    color: white;
+}
+
+.link-white {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: 400ms;
+    border-radius: 5px;
+}
+  
+.link-white:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 400ms;
+}
+  
+.link-white:hover:after {
+    width: 100%;
+}
+
+.link-white:focus:after {
+    background: var(--secondary-background);
+    transition: 400ms;
+}
+
+.link-white:focus {
+    color: var(--secondary-background);
+    transition: 400ms;
+    background-color: #F8F8F825;
 }
 
 ::-webkit-scrollbar {
