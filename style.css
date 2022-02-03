@@ -477,16 +477,16 @@ footer {
     background: var(--color-dark); 
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .navigation-button-container {
         display: none !important;
     }
 
     #profile-picture-index {
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 100%;
-        width: auto;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
     }
 
     #sidebarBtn {
