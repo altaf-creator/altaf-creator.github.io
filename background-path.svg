@@ -8,7 +8,7 @@
    viewBox="0 0 297 80"
    version="1.1"
    id="svg8"
-   sodipodi:docname="background.svg"
+   sodipodi:docname="background-path.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -54,7 +54,7 @@
      inkscape:cx="540.43161"
      inkscape:cy="186.87822"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text1296"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-bbox="true"
@@ -99,7 +99,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -115,16 +114,22 @@
        height="80"
        x="0"
        y="1.766066e-08" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;line-height:1.25;font-family:Al;-inkscape-font-specification:Al;text-align:end;text-anchor:end;stroke-width:0.264583"
-       x="296.48355"
-       y="70.034737"
-       id="text1296"><tspan
-         sodipodi:role="line"
-         id="tspan1294"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Alata;-inkscape-font-specification:Alata;fill:#ffffff;fill-opacity:0.181452;stroke-width:0.264583"
-         x="296.48355"
-         y="70.034737">&lt;/&gt;</tspan></text>
+    <g
+       aria-label="&lt;/&gt;"
+       id="text1296"
+       style="font-size:50.8px;line-height:1.25;font-family:Al;-inkscape-font-specification:Al;text-align:end;text-anchor:end;stroke-width:0.264583">
+      <path
+         d="m 212.15564,60.839937 v -5.5372 l 23.3172,-9.1948 v 5.6896 l -18.288,6.4516 18.288,6.604 v 5.6388 z"
+         style="font-family:Alata;-inkscape-font-specification:Alata;fill:#ffffff;fill-opacity:0.181452"
+         id="path1313" />
+      <path
+         d="m 254.98003,28.023137 h 4.9276 l -10.9728,46.6852 h -4.9276 z"
+         style="font-family:Alata;-inkscape-font-specification:Alata;fill:#ffffff;fill-opacity:0.181452"
+         id="path1315" />
+      <path
+         d="m 268.44196,64.853137 18.2372,-6.604 -18.2372,-6.4516 v -5.6388 l 23.2664,9.144 v 5.5372 l -23.2664,9.652 z"
+         style="font-family:Alata;-inkscape-font-specification:Alata;fill:#ffffff;fill-opacity:0.181452"
+         id="path1317" />
+    </g>
   </g>
 </svg>
