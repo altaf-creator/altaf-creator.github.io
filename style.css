@@ -119,6 +119,8 @@ body {
 
 .banner {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
     display: inline-block; 
     padding: 0px;
     margin: 0px;
@@ -478,6 +480,13 @@ footer {
 @media screen and (max-width: 600px) {
     .navigation-button-container {
         display: none !important;
+    }
+
+    #profile-picture-index {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100%;
+        width: auto;
     }
 
     #sidebarBtn {
