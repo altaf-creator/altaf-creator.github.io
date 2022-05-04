@@ -33,7 +33,7 @@ body {
     box-shadow: 0 1px 4px #04AA6DEE;
 }
 
-.button:active {
+.button:focus {
     transform: translateY(2.5px);
     background-color: var(--color-dark);
     box-shadow: 0 1px 4px #044D20EE;
@@ -69,11 +69,12 @@ body {
 .centered-container {
     padding: 20px;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+}
+
+.centered-alternate {
+    text-align: center;
 }
 
 .navigation-button {
@@ -119,7 +120,7 @@ body {
 
 .banner {
     width: 100%;
-    height: 350px;
+    height: 411.15px;
     object-fit: cover;
     display: inline-block; 
     padding: 0px;
@@ -292,6 +293,14 @@ footer {
 
 .default-margin {
     margin-left: 300px;
+    margin-right: 300px;
+}
+
+.default-margin-left {
+    margin-left: 300px;
+}
+
+.default-margin-right {
     margin-right: 300px;
 }
 
@@ -495,6 +504,14 @@ footer {
 
     .default-margin {
         margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .default-margin-left {
+        margin-left: 10px;
+    }
+
+    .default-margin-right {
         margin-right: 10px;
     }
 }
