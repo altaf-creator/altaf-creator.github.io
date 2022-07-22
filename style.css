@@ -119,8 +119,8 @@ body {
 }
 
 .banner {
-    width: 100%;
     height: 411.15px;
+    width: 100%;
     object-fit: cover;
     display: inline-block; 
     padding: 0px;
@@ -459,6 +459,31 @@ footer {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.hoverable-image {
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.hoverable-image-parent:hover .hoverable-image, .hoverable-image-parent:focus .hoverable-image {
+    -webkit-filter: blur(3px);
+    transform: scale(1.2);
+}
+
+.hoverable-image-parent {
+    overflow: hidden;
+}
+
+#banner_ball-run {
+    height: 411.15px;
+    width: 100%;
+    background-color: black; /* fallback color */
+    background-image: url("images/screenshot_ball-run.png");
+    background-position: center;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
