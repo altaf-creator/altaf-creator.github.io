@@ -52,6 +52,19 @@ hr {
     margin: 20px;
 }
 
+pre::before {
+    content: "> ";
+    color: #00A37B;
+}
+
+pre {
+    font-size: large;
+    background-color: #00000010;
+    padding: 10px;
+    border-radius: 5px;
+    color: #444;
+}
+
 .center {
     text-align: center;
 }

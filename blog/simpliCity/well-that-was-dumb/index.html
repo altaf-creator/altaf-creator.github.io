@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Blog / beta0.2: The Visual Update is Out! • altaf-creator</title>
+    <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+
+    <style>
+        .center-grid {
+            min-height: 0;
+        }
+    </style>
+</head>
+
+<body onload="addNodes()">
+    <script defer src="/scripts/scroll.js"></script>
+    <script defer src="/scripts/onload.js"></script>
+    <div class="floating-nav-container">
+        <div class="floating-nav">
+            <a href="/about/" class="link">About Me</a>
+            <a href="/projects/" class="link">Projects</a>
+            <a href="/blog/" class="link">(dev)Blog</a>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="/">
+            <img src="/assets/images/hero/logo.png" alt="" class="sidebar-img">
+        </a>
+        <span>altaf-creator</span>
+    </div>
+    <div class="sidebar-progress-container" id="progressContainer">
+    </div>
+    <section style="border-top: none; padding-top: 50px;" class="normal-section">
+        <div class="banner-shadow">
+            <img src="/assets/images/blog/33_banner.png" alt="" class="banner img">
+        </div>
+        <div class="center-grid">
+            <div class="div-sizing">
+                <div class="flex-container flex-container-column flex" style="gap: 7px; margin-top: 20px;">
+                    <div>
+                        <span class="colored-text">Devlog</span>, <span class="colored-text">simpliCity</span>
+                    </div>
+                    <h1 style="text-align: left; margin: 0;">This Week's Devlog: Well that was dumb. (33nd Week of 2023)
+                    </h1>
+                    <span style="color: rgba(0, 0, 0, 0.5);">Wednesday, 16 August 2023</span><br>
+                    <span>Written by <span class="colored-text">altaf-creator</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>Opening</h1>
+                <p>Hello, friends! Welcome back to the 5th.. or 6th.. (later editor note: it's 5th) weekly devlog! I
+                    want to apologize for not posting weekly devlogs for the past few weeks. In this devlog, I would
+                    like to tell you about my new projects and a stupid accident that I have did / occured.</p>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>New Projects</h1>
+                <p>Usually after I published a new update for my games, I often take a break for a few days or weeks. I
+                    also sometimes like to start a new side-project. And in this week, I have started some
+                    side-projects. Some of them are;</p>
+                <ol>
+                    <li>This website update.</li>
+                    <li>A new game. I have some different ideas for my new game, so I am currently deciding which game
+                        should I make for this new project.</li>
+                </ol>
+                <p>Now you may wonder, why did I create a new game? Well it was because...</p>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>The (dumb?) Accident</h1>
+                <p>Long story short, I have accidentally teleported simpliCity project folder to a higher dimension that
+                    no human could ever even begin to comperhend, aka deleted all the project files. <br> The long story
+                    is...</p>
+
+                <h2>The Beginning</h2>
+                <p>It was a normal day. I was thinking of backing up simpliCity using GitHub. Because currently,
+                    simpliCity project folder doesn't have any more copies apart from my drive. A month before, I have
+                    made a (local) Git repository in my drive. So uploading the simpliCity repo to GitHub should be
+                    simple, right?</p>
+
+                <h2>The Problem</h2>
+                <p>First, I made a new repo in GitHub, connect the git repo to the GitHub repo using <b>git remote</b>,
+                    rename the master branch to main, and push it to GitHub using <b>git push</b>-</p>
+                <pre>fatal: The push operation includes a file which exceeds GitHub's file size restriction of 100MB</pre>
+                <p>..Alright then. Turns out I included the temporary, automatically-generated Unity project files and
+                    folder. To fix this, I added the .gitignore template for Unity to tell Git to simply ignore the
+                    files and folder, and upload it again-</p>
+                <pre>fatal: The push operation includes a file which exceeds GitHub's file size restriction of 100MB</pre>
+                <p>Still the same error. Turns out that I have to remove the history of the ignored file, alias I have
+                    to make git forget about all of the temp files. <b>And this is where I messed up.</b></p>
+                <p>After executing the command to do that, I accidentally removed the entire Git commit history. "That's
+                    fine," I thought. So I executed another command to finish an operation, and I noticed something
+                    weird in the files.
+                </p>
+                <p>The Assets folder, aka the most important folder in the project, is <b>gone</b>. I have no idea what
+                    I did there, but the project was gone. I was panicking, spammed Ctrl + Z in VSCode and Windows
+                    Explorer, checked the recycle bin, and tried to undo the previous git operation, and tried to fetch
+                    the last commit.
+                    <br>I forgot that the entire git commit history is gone. Git cannot help me. The project is also not
+                    yet uploaded to GitHub, so the only <b>current</b> copy of the project is on my disk, and it's gone.
+                </p>
+                <p>I was confused, didn't know what just happened. So I tried downloading various data recovery tool,
+                    because I know when a file is deleted, it's not entirely erased from the disk, just flagged as empty
+                    and other programs can overwrite it. And it works! ..for just a few files. The Assets folder was
+                    already overwritten with another data. I have tried many, many programs, and nothing works.<br>
+                    Which means the Assets folder, is permanently deleted. I was sad, confused, and shocked (nah not
+                    really, but kinda sad). I <b>really</b> did permanently delete almost a year worth of work, and the
+                    worst part, I didn't know how and also can avoid it by being more careful.</p>
+
+                <h2>The Light at The End of The Tunnel?</h2>
+                <p>I did mention that I did not have any more copies for the current simpliCity project file (which is
+                    beta0.2.1), turns out that I actually have <b>one</b> old copy of beta0.1 (modified) project file. I
+                    also have the latest beta0.2 build, and all of the assets. </p>
+                <p>So, what does that mean? Well it can mean that I can recover my project, but it needs more work. How
+                    you may ask?</p>
+                <ol>
+                    <li>First, I will decompile my game to get all the new scripts from the latest build using ILSpy.
+                    </li>
+                    <li>Download the old copy, and open it in Unity.</li>
+                    <li>Update all the scripts to the new one.</li>
+                    <li>Update all of the old objects to the new one to adapt to the new scripts.</li>
+                    <li>Update all of the old assets to the new assets in my OneDrive.</li>
+                    <li>Finish it up and polish it. And it's done! It will not be an exact copy, but all of the new
+                        features should still be recovered. And probably will be improved.</li>
+                </ol>
+                <p>But this needs time. For now, I have decided to stop simpliCity development, and start a new
+                    projects. Why? My gamedev journey is still long, and I cannot stick to the same projects for months
+                    or years. I decided that this is the time for me to move on, and learn new things.</p>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>What does it mean for simpliCity?</h1>
+                <p>This means that simpliCity development will be on hold for quite some time until I recovered the
+                    project. This also means that I will make a new game! Yay! Finally!</p>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>What can we learn</h1>
+                <p>What can we learn from my mistake?</p>
+                <ol>
+                    <li>Back up all of your projects and files. Do NOT have only 1 copy of your project. Have it on a
+                        second drive, and also online services like Google Drive and OneDrive. Do this so if something
+                        happens to the original, you still have a copy of it.</li>
+                    <li>Back up regularly. If you have a back-up but it's old, that is still the same (but better) than
+                        having no back-ups at all. Back up your project every week or at least month.</li>
+                    <li>Be careful in things that you don't know. Especially file management and Git. Git is hard. And
+                        annoying.</li>
+                    <li>It's time to learn new things and move on. It is ok to make a big project and spend years on it,
+                        but you should also try and making many side-projects and improve over time.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="normal-section">
+        <div class="center-grid">
+            <div class="div-sizing">
+                <h1>Closing</h1>
+                <p>We have reached the end of this devlog. becase I feel I want to say sorry to everyone for
+                    dissapointing you because of this mistake. I also want to say please learn from this mistake. Better
+                    be safe than sorry! Also thank you, <b>thank you</b> everyone for staying with me in this journey.
+                </p>
+                <p>
+                    And that's it for this week. Thank you so much everyone for reading. <br>
+                    This is Altaf. <br>
+                    Stay safe, and see you next week on <a href="/blog/" class="link">The Altaf (dev)Blog</a>!
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
