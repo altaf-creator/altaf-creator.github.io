@@ -376,11 +376,11 @@ pre {
 .gradient-overlay {
     width: 100%;
     height: 100%;
-    background: linear-gradient(5deg, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 70%);
 }
 
 .gradient-overlay:hover {
-    background: linear-gradient(5deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 60%);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 80%);
 }
 
 .fill-div {
@@ -458,5 +458,13 @@ pre {
         width: 100%;
         height: 50%;
         box-sizing: border-box;
+    }
+
+    section {
+	padding-inline: 10px;
+    }
+
+    .gallery-card {
+	flex: 1 0 300px;	    
     }
 }
